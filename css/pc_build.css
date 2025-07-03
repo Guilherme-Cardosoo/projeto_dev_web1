@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=inter:wght@400;600;700&display=swap');
+
+:root {
+    --page: #fff;
+    --button: #0060dd;
+    --tittle-1: #000;
+    --tittle-2: #fff;
+}
+
+.dark {
+    --page: #272525;
+    --button: #0060dd;
+    --tittle-1: #fff;
+    --tittle-2: #fff;
+}
+
+body {
+    font-family: 'inter', sans-serif;
+    background-color: var(--page);
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 1.5vw;
+}
+
+#mainpage {
+    color: var(--tittle-1);
+    position: absolute;
+    left: 8vw;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    background: none; 
+}
+
+.title {
+    color: var(--tittle-1);
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+#darkModeButton {
+    color: var(--tittle-1);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 25px;
+    right: 8vw;
+    background-color: var(--page);
+    border: none;
+    cursor: pointer;
+    background: none; 
+}
+
+#darkModeButton .fa-sun {
+    display: none;
+}
+
+body.dark #darkModeButton .fa-sun {
+    display: inline;
+}
+
+body.dark #darkModeButton .fa-moon {
+    display: none;
+}
+
+
+section.alert {
+    background-color: var(--button);
+    border-radius: 5px;
+    padding: 0.8vw;
+    margin: 0 3vw;
+}
+
+div.text_alert {
+    color: var(--tittle-2);
+    font-size: 1.1vw;
+    display: flex;
+    justify-content: center;
+}
