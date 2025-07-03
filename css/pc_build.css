@@ -17,6 +17,7 @@
 body {
     font-family: 'inter', sans-serif;
     background-color: var(--page);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header {
@@ -33,13 +34,15 @@ header {
     font-size: 25px;
     border: none;
     cursor: pointer;
-    background: none; 
+    background: none;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .title {
     color: var(--tittle-1);
     font-size: 2vw;
     font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 #darkModeButton {
@@ -55,7 +58,7 @@ header {
     background-color: var(--page);
     border: none;
     cursor: pointer;
-    background: none; 
+    background: none;
 }
 
 #darkModeButton .fa-sun {
@@ -76,6 +79,7 @@ section.alert {
     border-radius: 5px;
     padding: 0.8vw;
     margin: 0 3vw;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 div.text_alert {
@@ -83,4 +87,5 @@ div.text_alert {
     font-size: 1.1vw;
     display: flex;
     justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
 }
